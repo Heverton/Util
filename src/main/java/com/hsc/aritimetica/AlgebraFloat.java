@@ -24,13 +24,13 @@ public abstract class AlgebraFloat {
     /**
      * Soma dois numeros.
      *
-     * @param BigDecimal v1
-     * @param BigDecimal v2
+     * @param valor
+     * @param asoma
      * @return BigDecimal
      */
-    public static BigDecimal soma(BigDecimal v1, BigDecimal v2) {
+    public static BigDecimal soma(BigDecimal valor, BigDecimal asoma) {
         // Realiza a soma
-        return v1.add(v2);
+        return valor.add(asoma);
     }
 
     /**
@@ -47,8 +47,8 @@ public abstract class AlgebraFloat {
     /**
      * Multiplica dois numero.
      *
-     * @param BigDecimal qtd
-     * @param BigDecimal valor
+     * @param qtd
+     * @param valor
      * @return BigDecimal
      */
     public static BigDecimal multiplicacao(BigDecimal qtd, BigDecimal valor) {
@@ -59,9 +59,9 @@ public abstract class AlgebraFloat {
      * Multiplica dois numero e permite truncar o valor com o número de casas
      * decimais que se deseja ter.
      *
-     * @param BigDecimal qtd
-     * @param BigDecimal valor
-     * @param int casasDecimais
+     * @param  qtd
+     * @param  valor
+     * @param  casasDecimais
      * @return BigDecimal
      */
     public static BigDecimal multiplicacao(BigDecimal qtd, BigDecimal valor, int casasDecimais) {
@@ -71,8 +71,8 @@ public abstract class AlgebraFloat {
     /**
      * Divide o valor de um numero.
      *
-     * @param BigDecimal dividendo
-     * @param BigDecimal divisor
+     * @param dividendo
+     * @param divisor
      * @return BigDecimal
      */
     public static BigDecimal divisao(BigDecimal dividendo, BigDecimal divisor) {
@@ -103,9 +103,9 @@ public abstract class AlgebraFloat {
      * Divide o valor de um numero e permite truncar o valor com o número de
      * casas decimais que se deseja ter.
      *
-     * @param BigDecimal dividendo
-     * @param BigDecimal divisor
-     * @param int casasDecimais
+     * @param  dividendo
+     * @param  divisor
+     * @param  casasDecimais
      * @return BigDecimal
      */
     public static BigDecimal divisao(BigDecimal dividendo, BigDecimal divisor, int casasDecimais) {
@@ -115,8 +115,8 @@ public abstract class AlgebraFloat {
     /**
      * Faz o calculo da porcentagem de um produto.
      *
-     * @param BigDecimal valorItem
-     * @param BigDecimal qtdPorc
+     * @param  valorItem
+     * @param  qtdPorc
      * @return BigDecimal valor na proporção da porcentagem
      */
     public static BigDecimal calculoPorcetagem(BigDecimal valorItem, BigDecimal qtdPorc) {
@@ -137,8 +137,8 @@ public abstract class AlgebraFloat {
     /**
      * Faz o calculo do reverso da porcentagem
      *
-     * @param BigDecimal valorItem
-     * @param BigDecimal qtdPorc
+     * @param  valorResultantePorcentagem
+     * @param  total
      * @return BigDecimal valor da porcentagem
      */
     public static BigDecimal calculoReversoPorcetagem(BigDecimal valorResultantePorcentagem, BigDecimal total) {
@@ -152,7 +152,7 @@ public abstract class AlgebraFloat {
     /**
      * Arredonda para cima n casas decimais
      *
-     * @param BigDecimal valor
+     * @param  valor
      * @return BigDecimal
      */    
     public static BigDecimal ceillCima(BigDecimal valor, int casasDecimais){
@@ -162,7 +162,7 @@ public abstract class AlgebraFloat {
     /**
      * Arredonda para cima 2 casas decimasi
      *
-     * @param BigDecimal valor
+     * @param valor valor
      * @return BigDecimal
      */
     public static BigDecimal ceillCima(BigDecimal valor){
@@ -231,8 +231,8 @@ public abstract class AlgebraFloat {
     /**
      * Coloca uma máscara na string para no formato brasileiro
      *
-     * @param BigDecimal valor
-     * @param int casasDecimais
+     * @param  valor
+     * @param  casasDecimais
      * @return String
      */
     public static String mascaraDouble(BigDecimal valor, int casasDecimais) {
@@ -247,8 +247,8 @@ public abstract class AlgebraFloat {
      * Retira a máscara na string para no formato brasileiro. Já retira os
      * pontos e vírgulas
      *
-     * @param BigDecimal valor
-     * @param int casasDecimais
+     * @param  valor
+     * @param  casasDecimais
      * @return String
      */
     public static String mascaraDoubleSemMarcacao(BigDecimal valor, int casasDecimais) {
@@ -263,7 +263,7 @@ public abstract class AlgebraFloat {
     /**
      * Coloca uma máscara na string no formato Americano sem vírgulas.
      *
-     * @param BigDecimal valor
+     * @param  valor
      * @return String
      */
     public static BigDecimal mascaraDoubleModeloAmericano(BigDecimal valor, int casasDecimais) {
@@ -327,7 +327,7 @@ public abstract class AlgebraFloat {
     /**
      * Formata Décimal
      *
-     * @param String valor
+     * @param  valor
      * @return BigDecimal
      */
     public static BigDecimal formataDecimal(String valor) {
@@ -340,7 +340,7 @@ public abstract class AlgebraFloat {
     /**
      * Truncar o valor. Exemplo: 1.9485 para 1,94.
      *
-     * @param BigDecimal value
+     * @param  value
      * @return BigDecimal
      */
     public static BigDecimal truncate(BigDecimal value) {
@@ -350,7 +350,7 @@ public abstract class AlgebraFloat {
     /**
      * Truncar o valor. Exemplo: 1.9485 para 1,n casas decimais.
      *
-     * @param BigDecimal value
+     * @param  value
      * @return BigDecimal
      */
     public static BigDecimal truncate(BigDecimal value, int casasDecimais) {
@@ -379,8 +379,8 @@ public abstract class AlgebraFloat {
      * Compara dois números floats e retorna se for menor. Verifica se o
      * valor$a$ser$compara é menor que valor
      *
-     * @param BigDecimal valor$a$ser$compara
-     * @param BigDecimal valor
+     * @param  valor$a$ser$compara
+     * @param  valor
      * @return boolean
      */
     public static boolean comparaBigDecimalMenor(BigDecimal valor$a$ser$compara, BigDecimal valor) {
@@ -402,8 +402,8 @@ public abstract class AlgebraFloat {
      * Compara dois números floats e retorna se for menor ou igual. Verifica se
      * o valor$a$ser$compara é menor que valor ou igual valor
      *
-     * @param BigDecimal valor$a$ser$compara
-     * @param BigDecimal valor
+     * @param  valor$a$ser$compara
+     * @param  valor
      * @return boolean
      */
     public static boolean comparaBigDecimalMenorIgual(BigDecimal valor$a$ser$compara, BigDecimal valor) {
@@ -425,8 +425,8 @@ public abstract class AlgebraFloat {
      * Compara dois números floats e retorna se for maior. Verifica se o
      * valor$a$ser$compara é maior que valor
      *
-     * @param BigDecimal valor$a$ser$compara
-     * @param BigDecimal valor
+     * @param  valor$a$ser$compara
+     * @param  valor
      * @return boolean
      */
     public static boolean comparaBigDecimalMaior(BigDecimal valor$a$ser$compara, BigDecimal valor) {
@@ -448,8 +448,8 @@ public abstract class AlgebraFloat {
      * Compara dois números floats e retorna se for maior ou igual. Verifica se
      * o valor$a$ser$compara é maior que valor ou igual valor
      *
-     * @param BigDecimal valor$a$ser$compara
-     * @param BigDecimal valor
+     * @param  valor$a$ser$compara
+     * @param  valor
      * @return boolean
      */
     public static boolean comparaBigDecimalMaiorIgual(BigDecimal valor$a$ser$compara, BigDecimal valor) {
@@ -471,8 +471,8 @@ public abstract class AlgebraFloat {
      * Compara dois números floats e retorna se for Igual. Verifica se o
      * valor$a$ser$compara é Igual a valor
      *
-     * @param BigDecimal valor$a$ser$compara
-     * @param BigDecimal valor
+     * @param  valor$a$ser$compara
+     * @param  valor
      * @return boolean
      */
     public static boolean comparaBigDecimalIgual(BigDecimal valor$a$ser$compara, BigDecimal valor) {

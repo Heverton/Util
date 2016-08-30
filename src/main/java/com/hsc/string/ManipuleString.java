@@ -13,8 +13,8 @@ final public class ManipuleString {
     /**
      * Método recursivo de acréscimo de quebra de linha em uma String.
      *
-     * @param String text
-     * @param int countCaracter
+     * @param  text
+     * @param  countCaracter
      * @return String
      */
     public static String addQuebraLinha(String text, int countCaracter) {
@@ -42,7 +42,7 @@ final public class ManipuleString {
     /**
      * Substitui os caracteres especiais por caracteres normais.
      *
-     * @param String acentuada
+     * @param  acentuada
      * @return String
      */
     public static String removerAcentos(String acentuada) {

@@ -20,8 +20,8 @@ abstract public class FilterString {
      * coloca em minúsculas todos os caracteres; - toupper - coloca em
      * maiúsculas todos os caracteres;
      *
-     * @param String[] filters
-     * @param String value
+     * @param filters
+     * @param value
      * @return String
      */
     public static String filter(String[] filters, String value) {
@@ -40,9 +40,9 @@ abstract public class FilterString {
      * coloca em minúsculas todos os caracteres; - toupper - coloca em
      * maiúsculas todos os caracteres;
      *
-     * @param String[] filters
-     * @param String value
-     * @param boolean withSpace
+     * @param  filters
+     * @param  value
+     * @param  withSpace
      * @return String
      */
     public static String filter(String[] filters, String value, boolean withSpace) {
@@ -62,10 +62,10 @@ abstract public class FilterString {
      * coloca em minúsculas todos os caracteres; - toupper - coloca em
      * maiúsculas todos os caracteres;
      *
-     * @param String[] filters
-     * @param String value
-     * @param boolean withSpace
-     * @param String escape
+     * @param filters
+     * @param value
+     * @param withSpace
+     * @param  escape
      * @return String
      */
     public static String filter(String[] filters, String value, boolean withSpace, String escape) {
@@ -138,8 +138,8 @@ abstract public class FilterString {
      * Remove todos os caracteres não alfanuméricos e pergunta se o caracter de
      * espaço é necessário.
      *
-     * @param String text
-     * @param boolean withSpace
+     * @param  text
+     * @param  withSpace
      * @return String
      */
     private static String extractNotAlnum(String text, boolean withSpace) {
@@ -150,9 +150,9 @@ abstract public class FilterString {
      * Remove todos os caracteres não alfanuméricos permitindo escapar alguns e
      * pergunta se o caracter de espaço é necessário.
      *
-     * @param String text
-     * @param boolean withSpace
-     * @param String escape
+     * @param  text
+     * @param  withSpace
+     * @param  escape
      * @return String
      */
     private static String extractNotAlnum(String text, boolean withSpace, String escape) {
@@ -163,9 +163,9 @@ abstract public class FilterString {
      * Remove todos os caracteres não alfanuméricos permitindo letra acentuadas
      * e pergunta se o caracter de espaço é necessário.
      *
-     * @param String text
-     * @param boolean withSpace
-     * @param boolean withAccentuation
+     * @param  text
+     * @param  withSpace
+     * @param  withAccentuation
      * @return String
      */
     private static String extractNotAlnum(String text, boolean withSpace, boolean withAccentuation) {
@@ -176,10 +176,10 @@ abstract public class FilterString {
      * Remove todos os caracteres não alfanuméricos permitindo letra acentuadas
      * e caracteres escapados, perguntando se o caracter de espaço é necessário.
      *
-     * @param String text
-     * @param boolean withSpace
-     * @param boolean withAccentuation
-     * @param String escape
+     * @param  text
+     * @param  withSpace
+     * @param  withAccentuation
+     * @param  escape
      * @return String
      */
     private static String extractNotAlnum(String text, boolean withSpace, boolean withAccentuation, String escape) {
@@ -222,8 +222,8 @@ abstract public class FilterString {
      * Remove todos os caracteres não numéricos e pergunta se o caracter de
      * espaço é necessário.
      *
-     * @param String text
-     * @param boolean withSpace
+     * @param  text
+     * @param  withSpace
      * @return String
      */
     private static String extractNotNumber(String text, boolean withSpace) {
@@ -234,9 +234,9 @@ abstract public class FilterString {
      * Remove todos os caracteres não numéricos permitindo caracteres escapados
      * e pergunta se o caracter de espaço é necessário.
      *
-     * @param String text
-     * @param boolean withSpace
-     * @param String escape
+     * @param  text
+     * @param  withSpace
+     * @param  escape
      * @return String
      */
     private static String extractNotNumber(String text, boolean withSpace, String escape) {
@@ -277,8 +277,8 @@ abstract public class FilterString {
      * Remove todos os caracteres não alfabéticos e pergunta se o caracter de
      * espaço é necessário.
      *
-     * @param String text
-     * @param boolean withSpace
+     * @param  text
+     * @param  withSpace
      * @return String
      */
     private static String extractNotAlpha(String text, boolean withSpace) {
@@ -289,9 +289,9 @@ abstract public class FilterString {
      * Remove todos os caracteres não alfabéticos permitindo escapar alguns e
      * pergunta se o caracter de espaço é necessário.
      *
-     * @param String text
-     * @param boolean withSpace
-     * @param String escape
+     * @param  text
+     * @param  withSpace
+     * @param  escape
      * @return String
      */
     private static String extractNotAlpha(String text, boolean withSpace, String escape) {
@@ -302,9 +302,9 @@ abstract public class FilterString {
      * Remove todos os caracteres não alfabéticos permitindo letra acentuadas e
      * pergunta se o caracter de espaço é necessário.
      *
-     * @param String text
-     * @param boolean withSpace
-     * @param boolean withAccentuation
+     * @param  text
+     * @param  withSpace
+     * @param  withAccentuation
      * @return String
      */
     private static String extractNotAlpha(String text, boolean withSpace, boolean withAccentuation) {
@@ -315,10 +315,10 @@ abstract public class FilterString {
      * Remove todos os caracteres não alfabéticos permitindo letra acentuadas e
      * caracteres escapados, perguntando se o caracter de espaço é necessário.
      *
-     * @param String text
-     * @param boolean withSpace
-     * @param boolean withAccentuation
-     * @param String escape
+     * @param  text
+     * @param  withSpace
+     * @param  withAccentuation
+     * @param  escape
      * @return String
      */
     private static String extractNotAlpha(String text, boolean withSpace, boolean withAccentuation, String escape) {

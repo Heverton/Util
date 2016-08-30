@@ -152,7 +152,7 @@ public class ManipulaArquivoTxt extends ManipulaArquivo {
      * após a última linha.
      *
      * @param dados
-     * @param isAposUltimaLinha
+     * @param isEscreverAposUltimaLinha
      * @throws IOException
      */
     public void addLinhas(List<String> dados, boolean isEscreverAposUltimaLinha) throws IOException {
@@ -172,7 +172,7 @@ public class ManipulaArquivoTxt extends ManipulaArquivo {
      * após a última linha.
      *
      * @param dados
-     * @param isAposUltimaLinha
+     * @param isEscreverAposUltimaLinha
      * @throws IOException
      */
     public void addLinha(String dados, boolean isEscreverAposUltimaLinha) throws IOException {

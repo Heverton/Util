@@ -198,7 +198,7 @@ public abstract class DataHora {
      * HH:mm:ss FORMATO_BRASILEIRO_HORA_SEP_VAZIO = 2 - HHmmss
      * FORMATO_BRASILEIRO_HORA_E_MIN_SEP_PONTO = 3 - HH:mm
      *
-     * @param String formato da hora
+     * @param formato da hora
      * @return String com a hora no formato HH:mm:ss
      */
     public static String formatoHora(Date hora, DataHora.tipo formato) throws NullPointerException {
@@ -223,8 +223,8 @@ public abstract class DataHora {
      * FORMATO_BRASILEIRO_DATA_DIA = dd FORMATO_BRASILEIRO_DATA_SEP_TRACO =
      * dd-MM-yyyy NULL = yyyy-MM-dd
      *
-     * @param String data
-     * @param String padrao
+     * @param  data
+     * @param  formato
      * @return Date
      *
      * @deprecated Pode ser substituído por "converterStringEmDate()"
@@ -261,8 +261,8 @@ public abstract class DataHora {
      * Formata a data quando vir neste formato ddmmYYYY para
      * dd(Separado)mm(Separado)YYYY
      *
-     * @param String data
-     * @param char separado
+     * @param  data
+     * @param  separado
      * @return String no formato dd-mm-YYYY
      */
     public static String formatarDataComMascara(String data, char separado) {
@@ -316,7 +316,7 @@ public abstract class DataHora {
     /**
      * Formata a data quando vir neste formato hhmmss
      *
-     * @param String hora
+     * @param  hora
      * @return String no formato hh:mm:ss
      */
     public static String formatarHoraSemMascara(String hora) throws NullPointerException {
@@ -417,12 +417,12 @@ public abstract class DataHora {
     /**
      * Compara e verifica se a primeira data e maior e igual que a segunda.
      *
-     * @param Date
-     * @param Date
+     * @param dateinit
+     * @param dateend
      * @return boolean
      */
-    public static boolean compararDataMaiorEIgual(Date d1, Date d2) {
-        if (d1.compareTo(d2) >= 0) {
+    public static boolean compararDataMaiorEIgual(Date dateinit, Date dateend) {
+        if (dateinit.compareTo(dateend) >= 0) {
             return true;
         } else {
             return false;
@@ -432,12 +432,12 @@ public abstract class DataHora {
     /**
      * Compara e verifica se a primeira data e menor e igual que a segunda.
      *
-     * @param Date
-     * @param Date
+     * @param dateinit
+     * @param dateend
      * @return boolean
      */
-    public static boolean compararDataMenorEIgual(Date d1, Date d2) {
-        if (d1.compareTo(d2) <= 0) {
+    public static boolean compararDataMenorEIgual(Date dateinit, Date dateend) {
+        if (dateinit.compareTo(dateend) <= 0) {
             return true;
         } else {
             return false;
@@ -447,12 +447,12 @@ public abstract class DataHora {
     /**
      * Compara e verifica se a primeira data e menor que a segunda.
      *
-     * @param Date
-     * @param Date
+     * @param dateinit
+     * @param dateend
      * @return boolean
      */
-    public static boolean compararDataMenor(Date d1, Date d2) {
-        if (d1.compareTo(d2) < 0) {
+    public static boolean compararDataMenor(Date dateinit, Date dateend) {
+        if (dateinit.compareTo(dateend) < 0) {
             return true;
         } else {
             return false;
@@ -462,12 +462,12 @@ public abstract class DataHora {
     /**
      * Compara e verifica se a primeira data e igual a segunda.
      *
-     * @param Date
-     * @param Date
+     * @param dateinit
+     * @param dateend
      * @return boolean
      */
-    public static boolean compararDataIgual(Date d1, Date d2) {
-        if (d1.compareTo(d2) == 0) {
+    public static boolean compararDataIgual(Date dateinit, Date dateend) {
+        if (dateinit.compareTo(dateend) == 0) {
             return true;
         } else {
             return false;
@@ -477,8 +477,8 @@ public abstract class DataHora {
     /**
      * Calcula a diferença da dtInicial para a dtFinal.
      *
-     * @param Date dtInicial
-     * @param Date dtFinal
+     * @param dtInicial
+     * @param dtFinal
      * @return quantidade de dias no intervalo.
      */
     public static int qtdDias(Date dtInicial, Date dtFinal) throws Exception {
@@ -543,7 +543,6 @@ public abstract class DataHora {
      * Autor: Herberts Cruz Versão: 1.0
      *
      * @param data
-     * @param Formato
      * @return String
      */
     public static Date converterToStringEmDate(String data) throws ParseException {
@@ -565,7 +564,7 @@ public abstract class DataHora {
      * Autor: Herberts Cruz Versão: 1.0
      *
      * @param data
-     * @param Formato
+     * @param formato
      * @return String
      */
     public static Date converterStringEmDate(String data, Formato formato) throws ParseException {
@@ -607,7 +606,7 @@ public abstract class DataHora {
      * Autor: Herberts Cruz Versão: 1.0
      *
      * @param data
-     * @param Formato
+     * @param formato
      * @return String
      */
     public static String converterDateEmString(Date data, Formato formato) {
@@ -657,7 +656,7 @@ public abstract class DataHora {
      * Autor: Herberts Cruz Versão: 1.0
      *
      * @param data
-     * @param Formato
+     * @param formato
      * @return String
      */
     public static boolean isDate(String data, Formato formato) {

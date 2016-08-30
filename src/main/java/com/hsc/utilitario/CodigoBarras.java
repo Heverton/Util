@@ -71,7 +71,7 @@ public abstract class CodigoBarras {
     /**
      * Gera um código de barras válido do tipo EAN 13.
      *
-     * @param ean
+     * @param barCodeSemVerificador
      * @return String
      */
     public static String geraBarCodeEAN(String barCodeSemVerificador) {
@@ -103,7 +103,6 @@ public abstract class CodigoBarras {
      * Gera o dígito verificador do tipo de código de barras solicitado.
      *
      * @param barCodeSemVerificador
-     * @param ean
      * @return String
      */
     private static String getVerificador(String barCodeSemVerificador) {

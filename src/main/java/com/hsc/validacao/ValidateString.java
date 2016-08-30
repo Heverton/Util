@@ -165,7 +165,7 @@ public abstract class ValidateString {
     /**
      * Verifica se o e-mail é válido.
      *
-     * @param String email
+     * @param  email
      * @return boolean
      */
     public static boolean isEmail(String email) {
@@ -175,7 +175,7 @@ public abstract class ValidateString {
     /**
      * Verifica se a url de site é válida.
      *
-     * @param String site
+     * @param  site
      * @return boolean
      */
     public static boolean isSite(String site) {
@@ -185,7 +185,7 @@ public abstract class ValidateString {
     /**
      * Verifica se o IP é válido.
      *
-     * @param String ip
+     * @param  ip
      * @return boolean
      */
     public static boolean isIP(String ip) {
@@ -195,7 +195,7 @@ public abstract class ValidateString {
     /**
      * Verifica se o cpf é válido.
      *
-     * @param String cpf
+     * @param  cpf
      * @return boolean
      */
     public static boolean isCpf(String cpf) {
@@ -248,7 +248,7 @@ public abstract class ValidateString {
     /**
      * Verifica se o cnpj é válido.
      *
-     * @param String cnpj
+     * @param  cnpj
      * @return boolean
      */
     public static boolean isCnpj(String cnpj) {
@@ -345,8 +345,8 @@ public abstract class ValidateString {
 
     /**
      *
-     * @param String frase
-     * @param String algoritmo
+     * @param  frase
+     * @param  algoritmo
      * @return byte[]
      */
     public static byte[] gerarHash(String frase, String algoritmo) {
@@ -419,7 +419,7 @@ public abstract class ValidateString {
     /**
      * Verifica se todos os caracteres são numéricos
      *
-     * @param String text
+     * @param  text
      * @return boolean
      * @deprecated Utilize isNumber
      */
@@ -434,7 +434,7 @@ public abstract class ValidateString {
     /**
      * Verifica se todos os caracteres são alfanuméricos.
      *
-     * @param String text
+     * @param  text
      * @return boolean
      * @deprecated Utilize isAlnum
      */
@@ -449,7 +449,7 @@ public abstract class ValidateString {
     /**
      * Verifica se todos os caracteres são alfabéticos.
      *
-     * @param String text
+     * @param  text
      * @return boolean
      * @deprecated Utilize isAlpha
      */
@@ -464,8 +464,8 @@ public abstract class ValidateString {
     /**
      * Verifica se possui a quantidade de caracteres desejada.
      *
-     * @param String text
-     * @param int quantidade
+     * @param  text
+     * @param  quantidade
      * @return boolean
      * @deprecated Utilize isLenght
      */
@@ -497,7 +497,7 @@ public abstract class ValidateString {
     /**
      * Retira todas as tags HTML de um código HTML, devolvendo o texto restante.
      *
-     * @param html HTML que terá as tags retiradas.
+     * @param  mensagem que terá as tags retiradas.
      * @return texto sem tags HTML.
      * @deprecated Utilize ManipuleString.limpaHTML(html)
      */
@@ -510,7 +510,7 @@ public abstract class ValidateString {
      *
      * Caso vazio e sem HTML = false Não vazio e sem HTML = true
      *
-     * @param html HTML que terá as tags retiradas.
+     * @param  mensagem que terá as tags retiradas.
      * @return boolean caso vazio true.
      * @deprecated Utilize a combinação isNullOrEmpty(ManipuleString.limpaHTML(html))
      */

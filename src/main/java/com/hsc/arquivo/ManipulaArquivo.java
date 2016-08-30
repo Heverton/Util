@@ -92,8 +92,7 @@ public abstract class ManipulaArquivo {
     
     /**
      * Método responsável por fazer o acoplamento da chamada do método ler.
-     * 
-     * @param isRemoveLinhasVazias
+     *
      * @throws FileNotFoundException
      * @throws IOException 
      */
@@ -114,7 +113,6 @@ public abstract class ManipulaArquivo {
      * Adiciona a linha no list de linhas, removendo as linhas vazias se o
      * parametro for definido como true.
      *
-     * @param isRemoveLinhasVazias
      * @param linha
      */
     private void addListLinhas(String linha) {
@@ -131,7 +129,6 @@ public abstract class ManipulaArquivo {
     /**
      * Faz a leitura do arquivo de fato.
      *
-     * @param isRemoveLinhasVazias
      * @return List<String>
      * @throws FileNotFoundException
      * @throws IOException

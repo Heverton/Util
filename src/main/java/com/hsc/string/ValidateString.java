@@ -14,7 +14,7 @@ public abstract class ValidateString {
     /**
      * Verifica se o número possui o número de casas decimais que se deseja.
      * 
-     * @param text
+     * @param number
      * @param amount
      * @return boolean
      */
@@ -66,7 +66,7 @@ public abstract class ValidateString {
      * flutuante.
      *
      * @param text
-     * @param floatPoint
+     * @param floatWithPoint
      * @return boolean
      */
     public static boolean isNumber(String text, boolean floatWithPoint) {
@@ -168,7 +168,7 @@ public abstract class ValidateString {
     /**
      * Verifica se o e-mail é válido.
      *
-     * @param String email
+     * @param  email
      * @return boolean
      */
     public static boolean isEmail(String email) {
@@ -178,7 +178,7 @@ public abstract class ValidateString {
     /**
      * Verifica se a url de site é válida.
      *
-     * @param String site
+     * @param  site
      * @return boolean
      */
     public static boolean isSite(String site) {
@@ -188,7 +188,7 @@ public abstract class ValidateString {
     /**
      * Verifica se o IP é válido.
      *
-     * @param String ip
+     * @param  ip
      * @return boolean
      */
     public static boolean isIP(String ip) {
@@ -198,7 +198,7 @@ public abstract class ValidateString {
     /**
      * Verifica se o cpf é válido.
      *
-     * @param String cpf
+     * @param  cpf
      * @return boolean
      */
     public static boolean isCpf(String cpf) {
@@ -251,7 +251,7 @@ public abstract class ValidateString {
     /**
      * Verifica se o cnpj é válido.
      *
-     * @param String cnpj
+     * @param  cnpj
      * @return boolean
      */
     public static boolean isCnpj(String cnpj) {
@@ -321,8 +321,8 @@ public abstract class ValidateString {
     /**
      * Verifica se o texto enviado é nulo e verifica o dados de acordo com a regex enviada.
      *
-     * @param String text
-     * @param String regex = não colocar início e fim da regex (^$)
+     * @param  text
+     * @param  regex = não colocar início e fim da regex (^$)
      * @return boolean
      */
     private static boolean executeRegex(String text, String regex) {
@@ -331,7 +331,7 @@ public abstract class ValidateString {
 
     /**
      *
-     * @param byte[] bytes
+     * @param  bytes
      * @return String
      */
     public static String stringHexa(byte[] bytes) {
@@ -351,8 +351,8 @@ public abstract class ValidateString {
 
     /**
      *
-     * @param String frase
-     * @param String algoritmo
+     * @param  frase
+     * @param  algoritmo
      * @return byte[]
      */
     public static byte[] gerarHash(String frase, String algoritmo) {

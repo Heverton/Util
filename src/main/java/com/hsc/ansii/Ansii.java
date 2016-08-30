@@ -4,7 +4,7 @@ import java.awt.event.KeyEvent;
 import java.util.HashMap;
 
 /**
- * Descobre o numero da tecla no padão ansi
+ * Descobre o numero da tecla no padrão ansi
  * Link:
  *  http://www.infoisis.eti.br/mqisi/tex/dos/pgtxdos001.htm
  *
@@ -12,9 +12,9 @@ import java.util.HashMap;
  * @author Herberts Cruz
  * @version 1.1
  */
-public class Ansii {
+public class Ansii<T> {
 
-    private HashMap arrayansii = new HashMap();
+    private HashMap<T, Integer> arrayansii = new HashMap();
 
     /**
      *
@@ -22,32 +22,33 @@ public class Ansii {
     public Ansii() {
         //Letras
         for (int i = 65; i <= 90; i++) {
-            arrayansii.put(KeyEvent.getKeyText(i).trim(), i);
+            arrayansii.put((T)KeyEvent.getKeyText(i).trim(), i);
         }
 
         //Número do teclado Left Pad
         for (int i = 106; i <= 123; i++) {
-            arrayansii.put(KeyEvent.getKeyText(i).replace("NumPad", "").replace("Teclado Numérico ", "").trim(), i);
+            arrayansii.put((T) KeyEvent.getKeyText(i).replace("NumPad", "").replace("Teclado Numérico ", "").trim(), i);
         }
     }
 
     /**
-     * O numero da tecla no padrão ansi
+     * O número da tecla no padrão ansi
      *
-     * @param a
+     * @param tecla
      * @return
      */
-    public int getArrayAnsii(String a) {
-        return Integer.parseInt(arrayansii.get(a) + "");
+    public T getArrayAnsii(T tecla) {
+        //System.out.println(arrayansii.values().parallelStream().forEach(ar -> {if ar.}));
+        return (T) arrayansii.get(tecla);
     }
 
     /**
      * O numero da tecla no padrão ansi na representação de String
      *
-     * @param a
-     * @return
+     * @param tecla
+     * @deprecated Utiliza a metodo "getArrayAnsii" para int ou string
      */
-    public String getArrayAnsiiString(String a) {
-        return arrayansii.get(a) + "";
+    public String getArrayAnsiiString(String tecla) {
+        return arrayansii.get(tecla) + "";
     }
 }
