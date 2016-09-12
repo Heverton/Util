@@ -11,6 +11,7 @@ import java.util.HashMap;
  * @author Heverton Cruz
  * @author Herberts Cruz
  * @version 1.1
+ *
  */
 public class Ansii<T> {
 
