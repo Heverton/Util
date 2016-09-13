@@ -1,3 +1,5 @@
+package br.com.util;
+
 import br.com.util.ansii.Ansii;
 import junit.framework.TestCase;
 import org.junit.Test;
