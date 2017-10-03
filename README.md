@@ -1,5 +1,9 @@
 # Util
-Framework de Funções uteis para Java
+==========
+
+[![](https://jitpack.io/v/Heverton/util.svg)](https://jitpack.io/#Heverton/util)
+
+Framework de funções uteis para Java.
 
 + Como utilizar a biblioteca:
 
