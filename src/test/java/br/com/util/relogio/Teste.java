@@ -44,13 +44,13 @@ public class Teste {
 
         System.out.println("--- " + formtVisual.format(rel.getDataHora().getTime()));
 
-        while (true) {
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException ex) {
-            }
-
-            System.out.println("--- " + formtVisual.format(rel.getDataHora().getTime()));
-        }
+//        while (true) {
+//            try {
+//                Thread.sleep(1000);
+//            } catch (InterruptedException ex) {
+//            }
+//
+//            System.out.println("--- " + formtVisual.format(rel.getDataHora().getTime()));
+//        }
     }
 }

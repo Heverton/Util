@@ -17,20 +17,20 @@ public class LoggingTest {
     @Test
     public void teste() {
         LoggingTest t = new LoggingTest();
-
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                while (true) {
-                    try {
-                        // pausa de 10 segundos
-                        Thread.sleep(1);
-                        Integer.parseInt("12q");
-                    } catch (NumberFormatException | InterruptedException e) {
-                        Log4jHost.getInstance(LoggingTest.class).error(e, e);
-                    }
-                }
-            }
-        }).start();
+//
+//        new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                while (true) {
+//                    try {
+//                        // pausa de 10 segundos
+//                        Thread.sleep(1);
+//                        Integer.parseInt("12q");
+//                    } catch (NumberFormatException | InterruptedException e) {
+//                        Log4jHost.getInstance(LoggingTest.class).error(e, e);
+//                    }
+//                }
+//            }
+//        }).start();
     }
 }

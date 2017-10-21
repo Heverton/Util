@@ -1,7 +1,7 @@
 package br.com.util.ansii;
 
 import java.awt.event.KeyEvent;
-import java.util.HashMap;
+import java.util.*;
 
 /**
  * Descobre o numero da tecla no padrão ansi
@@ -38,8 +38,20 @@ public class Ansii<T> {
      * @param tecla
      * @return
      */
+
     public T getArrayAnsii(T tecla) {
         return (T) arrayansii.get(tecla);
+    }
+
+    public String getArrayAnsiiStr(T tecla) {
+        for(T key : arrayansii.keySet()) {
+            Integer value = (Integer) tecla;
+            if (value == arrayansii.get(key)) {
+                return arrayansii.get(key)+"";
+            }
+        }
+
+        return null;
     }
 
     /**
