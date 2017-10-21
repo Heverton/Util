@@ -14,8 +14,8 @@ Framework de funções uteis para Java.
            </repository>
           </repositories>
 
-          <dependency>
-	      <groupId>com.github.Heverton</groupId>
-	      <artifactId>Util</artifactId>
-	      <version>1.3</version>
-          </dependency>
+	  <dependency>
+	    <groupId>com.github.Heverton</groupId>
+	    <artifactId>Util</artifactId>
+	    <version>1.3</version>
+	  </dependency>
