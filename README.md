@@ -1,24 +1,21 @@
 # Util
 ==========
 
-[![](https://jitpack.io/v/Heverton/util.svg)](https://jitpack.io/#Heverton/util)
+[![](https://jitpack.io/v/Heverton/Util.svg)](https://jitpack.io/#Heverton/Util)
 
 Framework de funções uteis para Java.
 
 + Como utilizar a biblioteca:
 
-          <distributionManagement>
-           <repository>
-             <id> internal.repo </id>
-               <name>Temporary Staging Repository </name>
-               <url>file://${project.build.directory}/mvn-repo</url>
+          <repositories>
+            <repository>
+              <id>jitpack.io</id>
+              <url>https://jitpack.io</url>
            </repository>
-          </distributionManagement>
+          </repositories>
 
-          <dependencies>
-             <dependency>
-               <groupId>br.com.util</groupId>
-                 <artifactId>com-util</artifactId>
-                 <version>1.2</version>
-             </dependency>
-          </dependencies>
+	  <dependency>
+	    <groupId>com.github.Heverton</groupId>
+	    <artifactId>Util</artifactId>
+	    <version>1.3</version>
+	  </dependency>
