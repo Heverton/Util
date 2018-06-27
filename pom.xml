@@ -21,6 +21,8 @@
         <log4.version> 1.2.16</log4.version>
         <github.global.server>github</github.global.server>
         <java.version>7</java.version>
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
     </properties>
 
     <distributionManagement>
