@@ -19,3 +19,6 @@ Framework de funções uteis para Java.
 	    <artifactId>Util</artifactId>
 	    <version>1.3</version>
 	  </dependency>
+
+# Dica:
+https://github.com/github/maven-plugins
