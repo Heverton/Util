@@ -17,6 +17,7 @@ import br.com.util.string.ValidateString;
  *
  * @author Heverton Cruz
  * @author Herberts Cruz
+ * @author Helder Cruz
  * @version 2.0
  */
 public abstract class AlgebraFloat {
