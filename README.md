@@ -1,4 +1,4 @@
-# Util
+# Util - Projeto de códigos reutilizáveis.
 ==========
 
 [![](https://jitpack.io/v/Heverton/Util.svg)](https://jitpack.io/#Heverton/Util)
